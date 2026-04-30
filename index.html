@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Notification App - Design System</title>
+  
+  <!-- Typography Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- 1. TOP BAR -->
+    <header class="top-bar">
+      <div class="top-bar__logo">Job Notification App</div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="top-nav desktop-nav">
+        <a href="/dashboard" class="nav-link" data-link>Dashboard</a>
+        <a href="/saved" class="nav-link" data-link>Saved</a>
+        <a href="/digest" class="nav-link" data-link>Digest</a>
+        <a href="/settings" class="nav-link" data-link>Settings</a>
+        <a href="/proof" class="nav-link" data-link>Proof</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </header>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="mobile-nav-panel">
+      <nav class="top-nav">
+        <a href="/dashboard" class="nav-link" data-link>Dashboard</a>
+        <a href="/saved" class="nav-link" data-link>Saved</a>
+        <a href="/digest" class="nav-link" data-link>Digest</a>
+        <a href="/settings" class="nav-link" data-link>Settings</a>
+        <a href="/proof" class="nav-link" data-link>Proof</a>
+      </nav>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="app-root" class="main-layout">
+      <!-- Content injected via router in app.js -->
+    </main>
+
+  </div>
+</body>
+</html>
